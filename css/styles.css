@@ -1,1 +1,167 @@
 /* rinella css */
+
+/*  
+font-family: 'Source Sans Pro', sans-serif;  
+font-family: 'Lora', serif;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-content img {
+    padding-bottom: 1em;
+}
+
+/* =================
+   Typography 
+   ================= */
+
+h1,
+h3 {
+    font-family: 'Lora', serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.intro-text {
+    color: #bfd3c1;
+    font-weight: 400;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-content-text {
+    color: #404040;
+}
+
+.main-content-text span {
+    text-transform: uppercase;
+}
+
+.date-text {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.fine-print {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.fab {
+    font-size: 2rem;
+    color: #404040;
+}
+
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(/images/guitar-unsplash-min.jpg);
+    background-size: cover;
+    background-color:#ffe4c4;
+    background-blend-mode: luminosity;
+    background-position: center;
+    padding: 3em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* =================
+   main-content section 
+   ================= */
+   
+.main-content {
+    /*padding: 2em 1em;*/
+}
+
+
+
+.intro > *,
+.main-content > * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================
+   media queries 
+   ================= */
+   
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro,
+    .main-content {
+        min-height: 100vh;
+    }
+
+    .intro, .main-content {
+        width: 50%;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
